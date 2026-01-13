@@ -1,3 +1,22 @@
 {
-  "levels": []
+  "levels": [
+    {
+      "Columns": ["A","B","C"],
+      "RowCount": 3,
+      "PlayableCells": ["A1","B1","C1","A2","B2","C2","A3","B3","C3"],
+      "Dominoes": [
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 5 }
+      ],
+      "Rules": [
+        {
+          "Name": "Sum",
+          "Type": "Sum",
+          "Cells": ["A1","B1"],
+          "TargetValue": 3
+        }
+      ]
+    }
+  ]
 }
