@@ -1328,7 +1328,7 @@
     { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4", "B5", "C5"], "TargetValue": 10 },
     { "Name": "Delta", "Type": "Delta", "Cells": ["A6", "A7"], "TargetValue": 1 },
     { "Name": "Sum", "Type": "Sum", "Cells": ["C6", "C7", "D6", "D7"], "TargetValue": 12 },
-    { "Name": "Equal", "Type": "Equal", "Cells": ["D4", "D5", "D6"], "TargetValue": 0 }
+    { "Name": "Equal", "Type": "Equal", "Cells": ["D4", "D5", "E5"], "TargetValue": 0 }
   ]
 }
   ]
