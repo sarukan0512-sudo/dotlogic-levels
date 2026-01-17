@@ -1,0 +1,1347 @@
+{
+  "levels": [
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 7,
+      "PlayableCells": ["D1", "C2", "D2", "C3", "D3", "D4", "E4", "F4", "A5", "B5", "C5", "D5", "A6", "C6", "D6", "E6", "F6", "C7", "D7", "E7"],
+      "Dominoes": [
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "D2", "D3"], "TargetValue": 15 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C2", "C3"], "TargetValue": 1 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D4", "E4", "F4"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A5", "A6", "B5", "C5", "D5"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C6", "C7", "D6", "D7"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E6", "E7", "F6"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E"],
+      "RowCount": 7,
+      "PlayableCells": ["A1", "B1", "B2", "C2", "D2", "B3", "C3", "D3", "E3", "C4", "D4", "E4", "C5", "D5", "E5", "B6", "C6", "E6", "C7", "D7"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "B2"], "TargetValue": 10 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C2", "D2", "D3", "E3"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C3", "C4", "D4"], "TargetValue": 15 },
+        { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["E4", "D5", "E5", "E6"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C5", "C6", "C7"], "TargetValue": 0 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 7,
+      "PlayableCells": ["A1", "A2", "B2", "D2", "E2", "F2", "B3", "C3", "D3", "A4", "B4", "C4", "D4", "B5", "C5", "D5", "B6", "D6", "B7", "D7"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 2 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2"], "TargetValue": 9 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["D2", "E2", "F2"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C3", "D3"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B5", "B6", "B7"], "TargetValue": 6 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B4", "C4", "D4"], "TargetValue": 0 },
+        { "Name": "LessThan", "Type": "LessThan", "Cells": ["C5", "D5"], "TargetValue": 5 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D6", "D7"], "TargetValue": 1 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D"],
+      "RowCount": 7,
+      "PlayableCells": ["A1", "B1", "C1", "D1", "A2", "B2", "C2", "D2", "B3", "C3", "B4", "C4", "D4", "A5", "B5", "C5", "D5", "B6", "C6", "B7", "C7", "D7"],
+      "Dominoes": [
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3", "B4"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "D2"], "TargetValue": 8 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C2", "C3", "C4"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B5", "C5", "D5", "C6"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B7", "C7", "D7"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E"],
+      "RowCount": 6,
+      "PlayableCells": ["B1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "B4", "D4", "E4", "A5", "B5", "C5", "D5", "E5", "A6", "B6", "C6", "E6"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "C2", "D2"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3", "B4"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A5", "A6", "B6", "C6"], "TargetValue": 20 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B5", "C5", "D5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D4", "E4", "E5"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 5,
+      "PlayableCells": ["A1", "B1", "C1", "B2", "C2", "D2", "B3", "C3", "D3", "E3", "F3", "B4", "C4", "D4", "E4", "F4", "B5", "C5", "D5", "F5"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 2 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "B2"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "D2"], "TargetValue": 10 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B3", "B4", "B5", "C5"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D3"], "TargetValue": 11 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E3", "F3"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D4", "D5", "E4"], "TargetValue": 12 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["F4", "F5"], "TargetValue": 3 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "RowCount": 3,
+      "PlayableCells": ["A1", "B1", "C1", "E1", "F1", "G1", "H1", "A2", "B2", "C2", "F2", "G2", "H2", "A3", "B3", "C3", "D3", "F3", "G3", "H3"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "A2"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "A3", "B3"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "C3", "D3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "F1", "F2"], "TargetValue": 7 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["G2", "G3"], "TargetValue": 2 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["H2", "H3"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G1", "G2", "H1"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G"],
+      "RowCount": 5,
+      "PlayableCells": ["A1", "B1", "C1", "A2", "B2", "C2", "D2", "E2", "F2", "G2", "A3", "B3", "C3", "D3", "E3", "F3", "A4", "B4", "C4", "D4", "C5", "D5"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C1", "C2", "C3", "D2"], "TargetValue": 0 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A1", "B1"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "A3", "B3"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4", "C4", "C3"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "D5", "D4"], "TargetValue": 5 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "E3", "F3"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "F2", "G2"], "TargetValue": 13 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "RowCount": 7,
+      "PlayableCells": ["E1", "F1", "G1", "A2", "B2", "C2", "D2", "E2", "E3", "F3", "G3", "G4", "H4", "G5", "H5", "F6", "G6", "F7", "G7", "H7"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 5, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "F1", "G1"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "C2", "D2", "E2"], "TargetValue": 16 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "F3", "G3"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G4", "H4", "H5"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F6", "G5", "G6"], "TargetValue": 15 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["F7", "G7"], "TargetValue": 4 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 6,
+      "PlayableCells": ["B1", "B2", "C2", "D2", "E2", "A3", "B3", "D3", "E3", "F3", "A4", "B4", "D4", "E4", "F4", "B5", "C5", "D5", "E5", "D6", "E6"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "C2"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "E3"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["F3", "F4"], "TargetValue": 5 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4", "D5"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D6", "E6"], "TargetValue": 6 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4", "B3"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B4", "B5", "C5"], "TargetValue": 11 }
+      ]
+    },
+{
+  "levels": [
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G"],
+      "RowCount": 5,
+      "PlayableCells": ["A1", "D1", "G1", "A2", "B2", "C2", "D2", "E2", "F2", "G2", "A4", "B4", "C4", "D4", "E4", "F4", "G4", "A5", "D5", "G5"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 0, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A2", "B2"], "TargetValue": 0 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["D1", "D2", "E2"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F2", "G2", "G1"], "TargetValue": 13 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["A4", "A5", "B4"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "D4", "E4"], "TargetValue": 6 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F4", "G4", "G5"], "TargetValue": 7 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G"],
+      "RowCount": 5,
+      "PlayableCells": ["A1", "A2", "B2", "C2", "E2", "A3", "B3", "C3", "E3", "F3", "G3", "A4", "B4", "C4", "D4", "E4", "F4", "D5", "E5", "F5"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2", "C2"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4", "B3", "B4", "C3"], "TargetValue": 13 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C4", "D4"], "TargetValue": 1 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F5", "E4", "D5", "E5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "F3", "F4"], "TargetValue": 16 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 6,
+      "PlayableCells": ["C1", "D1", "E1", "C2", "E2", "A3", "B3", "C3", "E3", "F3", "B4", "E4", "B5", "C5", "D5", "E5", "F5", "D6", "E6", "F6"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 0, "RightPip": 0 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "E1"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D6", "E6", "F6"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "F3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B5", "C5", "D5"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E4", "E5", "F5"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "B3", "C3", "B4"], "TargetValue": 4 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 7,
+      "PlayableCells": ["A1", "A2", "B2", "C2", "D2", "A3", "C3", "D3", "A4", "C4", "F4", "E5", "F5", "B6", "C6", "D6", "E6", "F6", "B7", "D7", "E7", "F7"],
+      "Dominoes": [
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "A4", "B2", "C2"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D3", "D2"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B6", "C6", "D6", "D7"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E7", "F6", "F7"], "TargetValue": 15 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["E5", "F4", "F5"], "TargetValue": 0 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 6,
+      "PlayableCells": ["B1", "C1", "D1", "E1", "F1", "A2", "B2", "F2", "A3", "B3", "E3", "A4", "B4", "C4", "D4", "E4", "B5", "C5", "D5", "B6"],
+      "Dominoes": [
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 5 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1", "B2", "B3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "A4"], "TargetValue": 10 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B4", "C4", "C5", "D5"], "TargetValue": 0 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B5", "B6"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "F1", "F2"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D4", "E4"], "TargetValue": 5 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+      "RowCount": 5,
+      "PlayableCells": ["B1", "C1", "D1", "E1", "F1", "G1", "H1", "I1", "A2", "B2", "C2", "G2", "H2", "I2", "A3", "B3", "C3", "F3", "G3", "H3", "I3", "B4", "F4", "F5"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 0 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "B3", "B4"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C1", "C2", "C3"], "TargetValue": 17 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "F1"], "TargetValue": 5 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["G1", "H1"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["I1", "I2", "I3"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G2", "H2", "G3", "H3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4", "F5"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 7,
+      "PlayableCells": ["C1", "E1", "F1", "C2", "D2", "F2", "A3", "B3", "C3", "D3", "F3", "A4", "D4", "E4", "F4", "C5", "D5", "F5", "A6", "B6", "C6", "D6", "A7", "D7"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 6 },
+        { "LeftPip": 1, "RightPip": 5 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "D2"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4", "B3", "C3"], "TargetValue": 6 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4", "E4"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "D5", "D6", "D7"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A6", "A7", "B6", "C6"], "TargetValue": 18 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "F1", "F2", "F3", "F4", "F5"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "RowCount": 4,
+      "PlayableCells": ["C1", "E1", "F1", "G1", "C2", "E2", "G2", "H2", "A3", "B3", "C3", "D3", "E3", "F3", "G3", "H3", "D4", "E4", "F4", "G4"],
+      "Dominoes": [
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3", "C1", "C2"], "TargetValue": 15 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["E1", "F1", "G1"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4", "E4"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "F3", "F4"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G3", "G4", "H3"], "TargetValue": 9 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["G2", "H2"], "TargetValue": 3 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F"],
+      "RowCount": 6,
+      "PlayableCells": ["A1", "B1", "C1", "D1", "A2", "B2", "D2", "E2", "F2", "B3", "C3", "D3", "E3", "B4", "C4", "D4", "E4", "C5", "D5", "C6", "D6", "E6"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 2 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "C1", "D1"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "F2", "E3"], "TargetValue": 15 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D3", "D4"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B4", "C4", "C3"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "C6", "D5"], "TargetValue": 12 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D6", "E6"], "TargetValue": 2 }
+      ]
+    },
+    {
+      "Columns": ["A", "B", "C", "D", "E", "F", "G"],
+      "RowCount": 6,
+      "PlayableCells": ["B1", "C1", "B2", "D2", "B3", "C3", "D3", "E3", "F3", "G3", "A4", "B4", "C4", "D4", "E4", "F4", "G4", "B5", "C5", "D5", "E5", "F5", "G5", "E6"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 5, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 6 }
+      ],
+      "Rules": [
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B1", "B2", "B3", "B4"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "B5", "C5"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "D4", "D5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E4", "E5", "E6"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "G3", "F4", "F5"], "TargetValue": 17 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["G4", "G5"], "TargetValue": 1 }
+      ]
+    },
+{
+  "levels": [
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 7,
+      "PlayableCells": ["A1","B1","A2","B2","D2","B3","D3","E3","B4","C4","D4","E4","B5","C5","D5","E5","C6","D6","E6","F6","C7","D7","E7","F7"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 6 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","A2","B2","B3"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B4","B5","C5","C6"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C7","D7","E7","F7"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D6","E6"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D5","E3","E4","E5"], "TargetValue": 16 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2","D3","D4","C4"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 4,
+      "PlayableCells": ["A1","B1","C1","D1","E1","F1","A2","B2","C2","D2","E2","F2","A3","B3","C3","D3","E3","F3","A4","B4","C4","D4","E4","F4"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B1","A2","B2"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C1","C2","D1"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1","F1","F2"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2","D3","E2","E3"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B3","B4"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3","C4","D4"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E4","F3","F4"], "TargetValue": 9 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 6,
+      "PlayableCells": ["B1","A2","B2","C2","D2","F2","A3","B3","C3","E3","F3","A4","B4","C4","D4","E4","F4","B5","E5","F5","B6","C6","D6","E6"],
+      "Dominoes": [
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B1","B2","A2","A3"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A4","B3","B4"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B5","B6","C6"], "TargetValue": 13 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C2","C3"], "TargetValue": 2 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E3","F3"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C4","D4","E4","F4"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D6","E5","E6","F5"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 6,
+      "PlayableCells": ["A1","B1","E1","F1","G1","H1","B2","G2","H2","A3","B3","C3","D3","G3","H3","A4","B4","C4","D4","B5","C5","D5","B6","C6"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A1","B1"], "TargetValue": 3 },
+        { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["B2","B3","A3","A4"], "TargetValue": 0 },
+        { "Name": "LessThan", "Type": "LessThan", "Cells": ["B4","B5","C5"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B6","C6"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C4","D3","D4","D5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F1","G1","H1","G2"], "TargetValue": 16 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["H2","G3","H3"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 5,
+      "PlayableCells": ["A1","B1","C1","F1","B2","C2","D2","E2","F2","B3","C3","D3","E3","F3","B4","C4","D4","E4","F4","G4","B5","C5","D5","E5","F5","G5"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 2 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","C1"], "TargetValue": 17 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2","B2","C2","B3"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B4","B5","C5","D5"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D3","D4","E4"], "TargetValue": 11 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E2","E3"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F1","F2","F3","F4"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E5","F5","G5","G4"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 7,
+      "PlayableCells": ["A1","B1","C1","A2","B2","C2","D2","A3","B3","D3","A4","B4","C4","D4","E4","A5","B5","C5","E5","F5","B6","C6","E6","F6","C7","D7"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 0, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 5 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","A2","B2"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","C2","D2","D3"], "TargetValue": 12 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D4","E4"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E5","E6","F5","F6"], "TargetValue": 5 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3","B3","A4","A5"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B4","C4","C5"], "TargetValue": 11 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C6","C7"], "TargetValue": 1 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 5,
+      "PlayableCells": ["C1","E1","F1","C2","D2","E2","F2","G2","A3","B3","C3","E3","F3","G3","H3","C4","E4","F4","G4","C5","D5","E5","F5","G5"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 0 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","C2","D2"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1","F1","F2","G2"], "TargetValue": 13 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["E2","E3","E4"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["A3","B3"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C3","C4","C5"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F4","F5","G5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G3","G4","H3"], "TargetValue": 19 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 7,
+      "PlayableCells": ["C1","C2","D2","E2","F2","B3","C3","D3","F3","B4","C4","D4","E4","F4","A5","B5","C5","D5","F5","A6","B6","D6","B7","C7"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 6 }
+      ],
+      "Rules": [
+        { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["C3","B3"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D3","D4","D5","D6"], "TargetValue": 15 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B4","C4","A5","B5"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","C2","D2","E2","F2"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3","E4","F4","F5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B6","B7","C7"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 6,
+      "PlayableCells": ["B1","C1","D1","F1","G1","H1","B2","F2","H2","A3","B3","F3","H3","A4","D4","E4","F4","H4","A5","D5","A6","B6","C6","D6"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B1","C1","D1"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B2","B3","A3","A4"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A5","A6","B6","C6"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D6","D5","D4","E4"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F4","F3","F2"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F1","G1","H1","H2"], "TargetValue": 5 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["H3","H4"], "TargetValue": 8 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 5,
+      "PlayableCells": ["B1","C1","D1","F1","G1","H1","B2","C2","D2","F2","H2","A3","B3","C3","D3","E3","F3","G3","H3","D4","E4","F4","G4","D5"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3","B1","B2","B3"], "TargetValue": 11 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C1","C2","C3"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D1","D2","D3"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D4","D5","E4","F4"], "TargetValue": 12 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["F3","G3"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F1","F2","G1"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["H1","H2","H3"], "TargetValue": 14 }
+      ]
+    },
+{
+  "levels": [
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 6,
+      "PlayableCells": ["A1","B1","C1","D1","G1","A2","B2","D2","E2","F2","G2","B3","D3","F3","G3","B4","C4","D4","E4","F4","D5","E5","F5","D6"],
+      "Dominoes": [
+        { "LeftPip": 1, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","A2","B1","B2"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D4","B3","B4","C4"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D5","D6","E5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E4","F4","F5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","D1","D2","D3"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E2","F2","F3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G1","G2","G3"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H","I","J"],
+      "RowCount": 4,
+      "PlayableCells": ["A1","B1","C1","D1","E1","F1","G1","H1","I1","J1","A2","B2","C2","D2","E2","F2","G2","A3","B3","D3","E3","G3","B4","C4","D4","E4"],
+      "Dominoes": [
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 0, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A1","A2"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B1","C1","C2","D2"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3","B4","C4","D4","D3"], "TargetValue": 20 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1","E2","E3","E4"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F1","F2","G2","G3"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G1","H1","I1"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E"],
+      "RowCount": 7,
+      "PlayableCells": ["C1","D1","B2","C2","D2","A3","B3","C3","D3","A4","B4","C4","D4","B5","C5","D5","A6","B6","C6","D6","B7","C7","D7","E7"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 0 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 0, "RightPip": 6 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","D1","D2","D3"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3","A4","B3","D2","C2"], "TargetValue": 6 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2","D3","C3","C4","B4"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B5","C5","D5"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A6","B6","C6","D6"], "TargetValue": 6 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C7","D7"], "TargetValue": 0 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 6,
+      "PlayableCells": ["C1","D1","C2","D2","A3","B3","C3","D3","E3","F3","G3","A4","B4","F4","G4","B5","D5","E5","F5","B6","C6","D6"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 0 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C1","C2","D2"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3","A4","B3","C3","D3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E3","F3","G3","G4"], "TargetValue": 10 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["F4","F5"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D5","E5"], "TargetValue": 9 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C6","D6"], "TargetValue": 2 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["B4","B5","B6"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 4,
+      "PlayableCells": ["A1","B1","C1","F1","B2","C2","D2","E2","F2","G2","B3","C3","D3","E3","F3","G3","H3","B4","C4","D4","E4","F4","G4","H4"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 4, "RightPip": 6 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","B2","B3","B4"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3","C4","D3"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","C2","D2"], "TargetValue": 13 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E2","F2"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E3","F3","G3","G2"], "TargetValue": 13 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D4","E4","F4","G4","H3","H4"], "TargetValue": 15 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 5,
+      "PlayableCells": ["A1","B1","C1","E1","F1","G1","A2","C2","G2","A3","B3","C3","E3","F3","G3","A4","E4","G4","A5","B5","C5","E5","F5","G5"],
+      "Dominoes": [
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 5 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","C1"], "TargetValue": 8 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E1","F1"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["G1","G2","G3"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E3","E4","E5"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G4","G5","F5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A4","A5","B5","C5"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2","A3","B3","C3","C2"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 5,
+      "PlayableCells": ["A1","B1","C1","E1","A2","C2","E2","F2","B3","C3","D3","E3","F3","G3","B4","C4","E4","F4","G4","C5","D5","E5","F5","G5"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 1 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","A2","B1"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","C2","C3"], "TargetValue": 8 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E1","E2"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3","B4","C4","C5"], "TargetValue": 15 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E3","F3"], "TargetValue": 1 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F4","G3","G4","G5"], "TargetValue": 20 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D5","E4","E5","F5"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 6,
+      "PlayableCells": ["A1","A2","B2","C2","D2","E2","F2","B3","C3","D3","E3","F3","G3","B4","D4","E4","F4","G4","D5","F5","C6","D6","E6","F6"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 1, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","A2","B2","C2"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2","E2","F2"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3","G3","G4"], "TargetValue": 13 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E3","E4"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F4","F5","F6","E6"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C6","D5","D6"], "TargetValue": 7 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D3","D4"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3","B4","C3"], "TargetValue": 8 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E"],
+      "RowCount": 7,
+      "PlayableCells": ["A1","B1","B2","C2","D2","E2","A3","B3","C3","D3","E3","A4","B4","C4","D4","E4","A5","B5","C5","D5","E5","A6","B6","E6","A7","B7"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 0 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","B2","B3"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3","A4","B4"], "TargetValue": 14 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C2","C3"], "TargetValue": 6 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D2","E2"], "TargetValue": 4 },
+        { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["A5","B5","A6","B6"], "TargetValue": 0 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["A7","B7"], "TargetValue": 5 },
+        { "Name": "LessThan", "Type": "LessThan", "Cells": ["C5","D5","E5"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C4","D3","D4","E3","E4"], "TargetValue": 10 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 4,
+      "PlayableCells": ["A1","B1","C1","D1","E1","F1","A2","B2","C2","D2","E2","F2","A3","B3","C3","D3","E3","F3","A4","B4","C4","D4","E4","F4"],
+      "Dominoes": [
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 0 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","C1","D1"], "TargetValue": 7 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1","F1"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E2","F2","F3"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C2","D2","C3","D3","E3"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E4","F4"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3","A4","B4","C4"], "TargetValue": 16 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2","B2","A3"], "TargetValue": 12 }
+      ]
+    },
+{
+  "levels": [
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 7,
+      "PlayableCells": ["A1","B1","C1","D1","E1","F1","A2","C2","D2","F2","A3","B3","C3","D3","E3","F3","G3","A4","B4","C4","D4","E4","D5","E5","F5","G5","B6","D6","E6","B7"],
+      "Dominoes": [
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 6 },
+        { "LeftPip": 4, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 1 },
+        { "LeftPip": 5, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 2 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","A2","A3","A4"], "TargetValue": 13 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["B1","C1","C2"], "TargetValue": 0 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["E3","F3","G3"], "TargetValue": 0 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B4","C4"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B6","B7"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D1","D2","D3"], "TargetValue": 9 },
+        { "Name": "LessThan", "Type": "LessThan", "Cells": ["D4","D5","D6"], "TargetValue": 11 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["F1","F2"], "TargetValue": 5 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E5","E6","F5","G5"], "TargetValue": 12 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H","I"],
+      "RowCount": 7,
+      "PlayableCells": ["D1","E1","F1","G1","H1","I1","I2","C3","D3","F3","G3","I3","I4","A5","C5","D5","F5","G5","I5","A6","I6","A7","B7","C7","D7","E7","F7","G7","H7","I7"],
+      "Dominoes": [
+        { "LeftPip": 6, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 0 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 3, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 3 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D1","E1","F1"], "TargetValue": 5 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["I2","I3","I4"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F7","G7","H7"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A5","A6","A7"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3","G3"], "TargetValue": 12 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G1","H1","I1"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["I5","I6","I7"], "TargetValue": 2 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B7","C7","D7"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3","D3"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C5","D5"], "TargetValue": 5 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["F5","G5"], "TargetValue": 1 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 7,
+      "PlayableCells": ["E1","F1","G1","A2","B2","C2","F2","G2","A3","B3","C3","D3","F3","G3","B4","D4","G4","A5","B5","D5","F5","G5","B6","C6","D6","F6","B7","C7","D7","F7"],
+      "Dominoes": [
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 0, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 5, "RightPip": 2 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 1 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E1","F1","G1"], "TargetValue": 9 },
+        { "Name": "LessThan", "Type": "LessThan", "Cells": ["F2","F3"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G2","G3","G4"], "TargetValue": 12 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A5","B5"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A2","A3","B3","B4"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F5","F6","F7"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B6","C6","D6","B7","C7","D7"], "TargetValue": 24 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["D4","D5"], "TargetValue": 2 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["B2","C2"], "TargetValue": 8 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["C3","D3"], "TargetValue": 3 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 6,
+      "PlayableCells": ["B1","C1","D1","E1","A2","C2","D2","F2","A3","B3","C3","E3","F3","G3","H3","A4","B4","D4","E4","F4","G4","H4","C5","D5","F5","G5","H5","C6","D6","E6"],
+      "Dominoes": [
+        { "LeftPip": 0, "RightPip": 0 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 6, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 3, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 0 },
+        { "LeftPip": 3, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 1 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 6 }
+      ],
+      "Rules": [
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B1","C1"], "TargetValue": 4 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F2","F3","G3"], "TargetValue": 14 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F4","F5"], "TargetValue": 6 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C5","D5","C6","D6","E6"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E3","E4","D4"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3","B4","A4"], "TargetValue": 8 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A2","A3"], "TargetValue": 3 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D1","E1","D2"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["H3","G4","H4"], "TargetValue": 10 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["C2","C3"], "TargetValue": 0 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 7,
+      "PlayableCells": ["B1","B2","C2","D2","E2","A3","B3","C3","E3","F3","G3","B4","C4","E4","F4","G4","D5","E5","F5","C6","D6","E6","F6","A7","B7","C7","D7","E7","F7","G7"],
+      "Dominoes": [
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 6, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 4, "RightPip": 0 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 0, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B1","B2"], "TargetValue": 3 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["C2","D2","E2"], "TargetValue": 11 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A3","B3","C3","B4","C4"], "TargetValue": 20 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3","G3","G4"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3","G3","G4"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E4","F4","F5","D5","E5"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["E6","F6","F7"], "TargetValue": 15 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C7","D7","E7"], "TargetValue": 12 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A7","B7"], "TargetValue": 1 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F"],
+      "RowCount": 7,
+      "PlayableCells": ["A1","B1","C1","D1","A2","C2","E2","F2","A3","C3","D3","E3","F3","A4","B4","C4","D4","E4","F4","A5","B5","C5","D5","E5","A6","C6","D6","A7","C7","D7"],
+      "Dominoes": [
+        { "LeftPip": 3, "RightPip": 6 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 4, "RightPip": 2 },
+        { "LeftPip": 3, "RightPip": 0 },
+        { "LeftPip": 0, "RightPip": 6 },
+        { "LeftPip": 1, "RightPip": 2 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 1 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 5 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 5 },
+        { "LeftPip": 4, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","A2","A3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C1","D1","C2"], "TargetValue": 3 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["E2","F2"], "TargetValue": 2 },
+        { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["E3","F3","E4","F4"], "TargetValue": 16 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C3","D3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A4","B4","B5","C5"], "TargetValue": 10 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["A6","A7"], "TargetValue": 1 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C6","C7","D6","D7"], "TargetValue": 12 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["D4","D5","D6"], "TargetValue": 0 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G","H"],
+      "RowCount": 6,
+      "PlayableCells": ["A1","D1","E1","F1","A2","B2","C2","D2","F2","G2","A3","B3","D3","F3","G3","B4","D4","E4","F4","G4","H4","B5","C5","D5","E5","F5","G5","E6"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 0, "RightPip": 1 },
+        { "LeftPip": 1, "RightPip": 1 },
+        { "LeftPip": 2, "RightPip": 6 },
+        { "LeftPip": 2, "RightPip": 5 },
+        { "LeftPip": 6, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 3, "RightPip": 3 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 0, "RightPip": 5 },
+        { "LeftPip": 1, "RightPip": 4 }
+      ],
+      "Rules": [
+        { "Name": "Sum", "Type": "Sum", "Cells": ["A1","A2","A3"], "TargetValue": 9 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B3","B4","B5"], "TargetValue": 12 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["D4","D5","E4"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["B2","C2","D2","D3"], "TargetValue": 14 },
+        { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["D1","E1","F1"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G2","G3","F3"], "TargetValue": 10 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["G4","G5"], "TargetValue": 9 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["E5","E6","F5"], "TargetValue": 0 }
+      ]
+    },
+    {
+      "Columns": ["A","B","C","D","E","F","G"],
+      "RowCount": 6,
+      "PlayableCells": ["C1","F1","B2","C2","D2","E2","F2","B3","C3","D3","E3","F3","G3","A4","B4","C4","D4","E4","F4","G4","B5","C5","D5","E5","B6","E6"],
+      "Dominoes": [
+        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 6, "RightPip": 6 },
+        { "LeftPip": 0, "RightPip": 4 },
+        { "LeftPip": 6, "RightPip": 0 },
+        { "LeftPip": 1, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 2 },
+        { "LeftPip": 1, "RightPip": 4 },
+        { "LeftPip": 5, "RightPip": 1 },
+        { "LeftPip": 6, "RightPip": 4 },
+        { "LeftPip": 1, "RightPip": 5 },
+        { "LeftPip": 5, "RightPip": 4 },
+        { "LeftPip": 0, "RightPip": 3 },
+        { "LeftPip": 2, "RightPip": 6 }
+      ],
+      "Rules": [
+        { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["C1","C2","B2","B3","B4","A4"], "TargetValue": 0 },
+        { "Name": "Delta", "Type": "Delta", "Cells": ["B5","B6"], "TargetValue": 1 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["C4","C5","D4"], "TargetValue": 8 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["D2","E2","F1","F2"], "TargetValue": 15 },
+        { "Name": "Equal", "Type": "Equal", "Cells": ["D3","E3","E4","E5"], "TargetValue": 0 },
+        { "Name": "Sum", "Type": "Sum", "Cells": ["F3","G3","F4","G4"], "TargetValue": 8 }
+      ]
+    }
+  ]
+}
