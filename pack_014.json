@@ -1125,7 +1125,7 @@
         { "LeftPip": 0, "RightPip": 3 },
         { "LeftPip": 6, "RightPip": 5 },
         { "LeftPip": 5, "RightPip": 1 },
-        { "LeftPip": 4, "RightPip": 3 },
+        { "LeftPip": 4, "RightPip": 3 }
       ],
       "Rules": [
         { "Name": "Sum", "Type": "Sum", "Cells": ["D1","E1","F1"], "TargetValue": 5 },
